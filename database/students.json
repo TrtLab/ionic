@@ -1,0 +1,25 @@
+{
+    "students": [
+        {
+            "id": 0,
+            "name": "Samuel",
+            "grade": 12,
+            "isProjectDone": false,
+            "comment": "Appliqué, sérieux"
+        },
+        {
+            "id": 1,
+            "name": "Christine",
+            "grade": 18,
+            "isProjectDone": true,
+            "comment": "Brillante et inspirante"
+        },
+        {
+            "id": 2,
+            "name": "Quentin",
+            "grade": 8,
+            "isProjectDone": false,
+            "comment": "Elément perturbateur"
+        }
+    ]
+}
