@@ -1,11 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Student</ion-title>
+    <ion-title>Profil de {{ student.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
-    
+    <ion-card-header>
+      <ion-card-subtitle>Etudiant</ion-card-subtitle>
+      <ion-card-title>{{ student.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Note obtenue: 
+        <ion-badge color="primary" mode="ios">{{ student.grade }}</ion-badge>
+      </p>  
+    </ion-card-content>
   </ion-card>
 </ion-content>

@@ -2,14 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { TestComponent } from '../components/test/test.component';
 import { StudentServiceService } from '../student-service.service';
-
-interface Students {
-  id?: number;
-  name: string;
-  grade: number;
-  comment: string;
-  isProjectDone: boolean;
-}
+import { Student } from '../Student';
 
 @Component({
   selector: 'app-home',
@@ -17,13 +10,13 @@ interface Students {
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit{
-  students: Students[];
+  students: Student[];
   message: string = "";
 
   constructor(public popoverController: PopoverController, public studentService: StudentServiceService) {}
 
   ngOnInit(): void {
-    this.studentService.findAll().subscribe((students: Students[]) => {this.students = students});
+    this.studentService.findAll().subscribe((students: Student[]) => {this.students = students});
   }
 
   onClick(index: number) {
